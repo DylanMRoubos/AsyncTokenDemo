@@ -19,7 +19,7 @@ namespace CancellationTokenExample.Controllers
             {
                 _logger.LogInformation("Request was cancelled");
                 context.ExceptionHandled = true;
-                context.Result = new StatusCodeResult(400);
+                context.Result = new StatusCodeResult(499);
             }
         }
     }
